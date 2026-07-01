@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitat™ Journey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background: #f6f7fb;
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(135deg, #071A35, #154C79, #3A8DDE);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .hero {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            opacity: .9;
+            margin-bottom: 40px;
+        }
+
+        .hero button {
+            padding: 18px 45px;
+            font-size: 18px;
+            border: none;
+            border-radius: 50px;
+            background: white;
+            color: #154C79;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .hero button:hover {
+            transform: translateY(-5px);
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 60px;
+            color: #154C79;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            background: #2d8cff;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+        .card {
+            width: 420px;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+            margin: 25px 0;
+            position: relative;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #154C79;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: #2d8cff;
+            margin: 5px;
+        }
+
+        .branch {
+            display: flex;
+            gap: 50px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .branch .card {
+            width: 350px;
+        }
+
+        footer {
+            background: #071A35;
+            color: white;
+            padding: 60px;
+            text-align: center;
+        }
+
+        footer button {
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: #2d8cff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .card {
+                width: 100%;
+                padding-left: 35px;
+            }
+
+            .branch {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="hero">
+
+            <h1>Dream Home Journey</h1>
+
+            <p>
+                From finding your perfect home inspiration to handing over the keys—
+                experience an intelligent, cinematic construction journey.
+            </p>
+
+            <button onclick="document.getElementById('journey').scrollIntoView({behavior:'smooth'})">
+                Explore Journey
+            </button>
+
+        </div>
+
+    </header>
+
+    <section id="journey">
+
+        <h2 class="title">Customer Experience Flow</h2>
+
+        <div class="timeline">
+
+            <div class="card">
+                <h3>🏡 Landing Page</h3>
+                <p>Welcome visitors with premium visuals and project highlights.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>📚 Collections</h3>
+                <p>Explore curated home collections.</p>
+            </div>
+
+            <div class="arrow">OR</div>
+
+            <div class="card">
+                <h3>🎨 Dream Canvas™</h3>
+                <p>Create your dream home vision board.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🤖 Dream Match Engine™</h3>
+                <p>AI intelligently matches customer preferences.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <h2 style="margin:20px;">Match Found?</h2>
+
+            <div class="branch">
+
+                <div class="card">
+                    <h3>✅ YES</h3>
+
+                    <p>
+                        House Details
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>❌ NO</h3>
+
+                    <p>
+
+                        Habitat Atelier™<br><br>
+
+                        Custom Design
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🏠 House Details</h3>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🎬 Cinematic Build Engine™</h3>
+                <p>Immersive visualization of your project.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🚶 Habitat Walk™</h3>
+                <p>Virtual walkthrough experience.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>⚙ Habitat Config™</h3>
+                <p>Customize finishes, materials, and features.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>💰 Habitat Cost Studio™</h3>
+                <p>Live budgeting and transparent pricing.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>📞 Consultation Hub</h3>
+                <p>Book consultations with experts.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>📊 Habitat Dashboard™</h3>
+                <p>Monitor every stage of your project.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🏗 Construction Command Center™</h3>
+                <p>Real-time project tracking and execution.</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h3>🎉 Project Completion</h3>
+                <p>Your dream home is delivered.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h2>Your Dream Home Starts Here</h2>
+
+        <p>Experience intelligent home design powered by Habitat™</p>
+
+        <button>Book Consultation</button>
+
+    </footer>
+
+</body>
+
+</html>
